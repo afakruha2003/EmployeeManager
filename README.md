@@ -115,34 +115,24 @@ A modern, cross-platform employee management application built with **Expo**, **
 ## 📸 Screenshots
 
 ### Home Screen
-*Screenshot of the main employee list with search bar, filters, and employee cards*
+Display all employees with search and filter functionality
+![Home Screen](assets/screenshots/home.jpeg)
 
-![Add your home screen screenshot here]
+### Add Employee
+Create new employee with form validation
+![Add Employee](assets/screenshots/add.jpeg)
 
-### Employee Statistics
-*Screenshot showing the statistics pills with employee counts by status*
+### Edit Employee
+Update or delete existing employees
+![Edit Employee](assets/screenshots/edit.jpeg)
 
-![Add your statistics screenshot here]
+### Search
+Search by name/phone 
+![Search](assets/screenshots/search.jpeg)
 
-### Add Employee Screen
-*Screenshot of the form to create a new employee with field validation*
-
-![Add your add employee screen screenshot here]
-
-### Edit Employee Screen
-*Screenshot of the employee edit form with update and delete options*
-
-![Add your edit employee screen screenshot here]
-
-### Search & Filter
-*Screenshot demonstrating the search functionality and status filters*
-
-![Add your search & filter screenshot here]
-
-### Status Indicators
-*Screenshot showing the different status badges (Junior, Senior, Retired)*
-
-![Add your status indicators screenshot here]
+### Filter
+Filter by status
+![Filter](assets/screenshots/filter.jpeg)
 
 ---
 
