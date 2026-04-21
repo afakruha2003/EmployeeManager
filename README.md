@@ -110,23 +110,23 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 ### Home Screen
 Display all employees with search and filter functionality
-![Home Screen](assets/screenshots/home.jpeg)
+<img src="assets/screenshots/home.jpeg" alt="Home Screen" width="300" />
 
 ### Add Employee
 Create new employee with form validation
-![Add Employee](assets/screenshots/add.jpeg)
+<img src="assets/screenshots/add.jpeg" alt="Add Employee" width="300" />
 
 ### Edit Employee
 Update or delete existing employees
-![Edit Employee](assets/screenshots/edit.jpeg)
+<img src="assets/screenshots/edit.jpeg" alt="Edit Employee" width="300" />
 
 ### Search
 Search by name/phone 
-![Search](assets/screenshots/search.jpeg)
+<img src="assets/screenshots/search.jpeg" alt="Search" width="300" />
 
 ### Filter
 Filter by status
-![Filter](assets/screenshots/filter.jpeg)
+<img src="assets/screenshots/filter.jpeg" alt="Filter" width="300" />
 ---
 
 ## 📱 System Requirements
