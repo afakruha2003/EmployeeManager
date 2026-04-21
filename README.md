@@ -115,7 +115,8 @@ A modern, cross-platform employee management application built with **Expo**, **
    <img src="assets/screenshots/add.jpeg" alt="Add Employee" width="250" />
    <img src="assets/screenshots/edit.jpeg" alt="Edit Employee" width="250" />
    <img src="assets/screenshots/search.jpeg" alt="Search" width="250" />
-   <img src="assets/screenshots/filter.jpeg" alt="Filter" width="250" />
+   <img src="assets/screenshots/home_filter.jpeg" alt="Filter" width="250" />
+   <img src="assets/screenshots/delete.jpeg" alt="Filter" width="250" />
   </div>
   
 </div>
