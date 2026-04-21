@@ -9,17 +9,12 @@ A modern, cross-platform employee management application built with **Expo**, **
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Screenshots](#screenshots)
-- [Technology Stack](#technology-stack)
 - [System Requirements](#system-requirements)
 - [Installation & Setup](#installation--setup)
 - [Usage Guide](#usage-guide)
-- [Architecture](#architecture)
 - [Project Structure](#project-structure)
 - [Firebase Configuration](#firebase-configuration)
 - [Available Scripts](#available-scripts)
-- [Development](#development)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -133,9 +128,7 @@ Search by name/phone
 ### Filter
 Filter by status
 ![Filter](assets/screenshots/filter.jpeg)
-
 ---
-
 
 ## 📱 System Requirements
 
