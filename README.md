@@ -110,30 +110,14 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
   <div style="text-align: center;">
-    <h4>Home Screen</h4>
-    <p>Display all employees with search and filter functionality</p>
-    <img src="assets/screenshots/home.jpeg" alt="Home Screen" width="250" />
+    
+   <img src="assets/screenshots/home.jpeg" alt="Home Screen" width="250" />
+   <img src="assets/screenshots/add.jpeg" alt="Add Employee" width="250" />
+   <img src="assets/screenshots/edit.jpeg" alt="Edit Employee" width="250" />
+   <img src="assets/screenshots/search.jpeg" alt="Search" width="250" />
+   <img src="assets/screenshots/filter.jpeg" alt="Filter" width="250" />
   </div>
-  <div style="text-align: center;">
-    <h4>Add Employee</h4>
-    <p>Create new employee with form validation</p>
-    <img src="assets/screenshots/add.jpeg" alt="Add Employee" width="250" />
-  </div>
-  <div style="text-align: center;">
-    <h4>Edit Employee</h4>
-    <p>Update or delete existing employees</p>
-    <img src="assets/screenshots/edit.jpeg" alt="Edit Employee" width="250" />
-  </div>
-  <div style="text-align: center;">
-    <h4>Search</h4>
-    <p>Search by name/phone</p>
-    <img src="assets/screenshots/search.jpeg" alt="Search" width="250" />
-  </div>
-  <div style="text-align: center;">
-    <h4>Filter</h4>
-    <p>Filter by status</p>
-    <img src="assets/screenshots/filter.jpeg" alt="Filter" width="250" />
-  </div>
+  
 </div>
 ---
 
