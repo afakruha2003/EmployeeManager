@@ -136,43 +136,6 @@ Filter by status
 
 ---
 
-## 🛠 Technology Stack
-
-### Frontend Framework & UI
-- **React Native** `0.83.6` - Cross-platform mobile development framework
-- **Expo** `55.0.16` - React Native framework with simplified tooling
-- **React** `19.2.0` - JavaScript library for UI components
-- **TypeScript** `~5.9.2` - Type-safe JavaScript development
-
-### Navigation & Routing
-- **Expo Router** `~55.0.13` - File-based routing system inspired by Next.js
-- **React Navigation** `7.1.8` - Navigation library for React Native
-- **React Navigation Bottom Tabs** `7.4.0` - Bottom tab navigation support
-
-### Backend & Data Persistence
-- **Firebase** `12.12.1` - Google's real-time database and backend services
-- **Firebase Firestore** - Cloud database for employee records
-- **React Native AsyncStorage** `2.2.0` - Local data persistence layer
-
-### UI & Animation Libraries
-- **React Native Reanimated** `4.2.1` - High-performance animation library
-- **React Native Gesture Handler** `~2.30.0` - Native gesture handling
-- **React Native Screens** `~4.23.0` - Native navigation primitives
-- **React Native Safe Area Context** `~5.6.0` - Safe area management
-- **Expo Haptics** `~55.0.14` - Haptic feedback support
-- **Expo Vector Icons** `15.0.3` - Icon library support
-
-### Development & Code Quality
-- **ESLint** `9.25.0` - JavaScript linting and code quality
-- **ESLint Config Expo** `~55.0.0` - Expo-specific ESLint configuration
-
-### Platform-Specific Support
-- **Expo Image** `~55.0.9` - Advanced image handling
-- **Expo Font** `~55.0.6` - Custom font loading
-- **Expo Status Bar** `~55.0.5` - Status bar management
-- **Expo Splash Screen** `~55.0.19` - App splash screen handling
-
----
 
 ## 📱 System Requirements
 
@@ -316,55 +279,6 @@ npx expo start --web
 1. Install Expo Go from App Store (iOS) or Play Store (Android)
 2. Run `npm start`
 3. Scan the QR code displayed in terminal
-
-### Basic Workflows
-
-#### Adding an Employee
-1. Tap the **"+ Add"** button on the home screen
-2. Enter employee **Full Name**
-3. Enter employee **Phone Number**
-4. Select employee **Status** (Junior, Senior, or Retired)
-5. Preview the initials avatar
-6. Tap **"Save Employee"** to create
-7. Return to home screen to see the new employee
-
-#### Viewing Employees
-1. All employees appear in a list on the home screen
-2. Use **Statistics Pills** at the top to see counts by status
-3. Employees are sorted by creation date (newest first)
-
-#### Searching for Employees
-1. Use the search box with 🔍 icon
-2. Type employee **name** or **phone number**
-3. Results filter in real-time
-4. Tap clear button to reset search
-
-#### Filtering by Status
-1. Tap any status button to filter:
-   - **🌱 Junior** - Junior level employees
-   - **⭐ Senior** - Senior level employees
-   - **🏅 Retired** - Retired employees
-2. Shows count of employees in each category
-3. Only selected status employees display
-4. Tap "All" to see all employees
-
-#### Editing an Employee
-1. Tap on an employee card to edit
-2. Modify any field (Name, Phone, Status)
-3. Avatar preview updates in real-time
-4. Tap **"Update Employee"** to save changes
-5. Or tap **"Remove"** to delete employee
-6. Confirm deletion in the alert dialog
-
-#### Deleting an Employee
-1. From employee card: Tap the **🗑️ delete button**
-2. From edit screen: Tap the **"Remove"** button
-3. Confirm in the alert dialog
-4. Employee removed from list immediately
-
----
-
-## 🏗 Architecture
 
 ### Application Architecture
 
@@ -530,33 +444,6 @@ Each employee document contains:
 }
 ```
 
-### Firebase Firestore Rules
-
-Recommended security rules for development:
-
-```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /employees/{document=**} {
-      allow read, write: if true;  // ⚠️ Unrestricted - for development only
-    }
-  }
-}
-```
-
-**Production Rules** (Recommended):
-
-```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /employees/{document=**} {
-      allow read, write: if request.auth != null;  // Requires authentication
-    }
-  }
-}
-```
 
 ### Firebase Functions Used
 
@@ -592,18 +479,6 @@ npm run lint
 npm run reset-project
 ```
 
----
-
-## 💻 Development
-
-### Development Best Practices
-
-1. **Use TypeScript** - All new code should be in TypeScript for type safety
-2. **Component Reusability** - Create reusable components in the `components/` folder
-3. **Constants** - Use `constants/theme.ts` for all colors and styling
-4. **Error Handling** - Always wrap async operations in try-catch blocks
-5. **Loading States** - Show loading indicators during data fetching
-6. **Validation** - Validate user input before submitting to Firebase
 
 ### Hot Reload Development
 
@@ -620,19 +495,6 @@ npm start
 # 'j' - Open debugger
 # 'q' - Quit
 ```
-
-### Debugging
-
-```bash
-# Debug in browser
-npm start
-# Press 'j' to open debugger
-
-# View device logs
-npm start
-# Logs will display in terminal
-```
-
 ### Adding New Features
 
 1. **Create New Screen**
@@ -655,39 +517,6 @@ npm start
 
 ---
 
-## 📦 Deployment
-
-### Building for Production
-
-#### iOS Build
-```bash
-# Prerequisites
-# - Apple Developer Account
-# - Xcode installed
-# - Apple certificates configured
-
-eas build --platform ios
-```
-
-#### Android Build
-```bash
-# Prerequisites
-# - Google Play Developer Account
-# - Android keystore configured
-
-eas build --platform android
-```
-
-#### Web Deployment
-```bash
-# Build for web
-npm run web
-
-# Or build static files
-expo export:web
-# Output will be in web-build/ directory
-```
-
 ### Pre-Deployment Checklist
 
 - [ ] Update `app.json` with correct app name and version
@@ -701,83 +530,8 @@ expo export:web
 - [ ] Verify error handling and edge cases
 - [ ] Update README with any new features
 
----
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-#### Issue: Firebase Config Not Found
-**Solution:**
-1. Ensure `firebaseConfig.js` and `lib/firebase.ts` have correct credentials
-2. Check Firebase project exists in Firebase Console
-3. Verify firebaseConfig credentials match your project
-
-#### Issue: Employees Not Loading
-**Solution:**
-1. Check internet connection
-2. Verify Firestore database has `employees` collection
-3. Check Firebase security rules allow read access
-4. Check browser console for error messages
-5. Try: `npm start` and reload app
-
-#### Issue: Can't Add Employee
-**Solution:**
-1. Verify all form fields are filled
-2. Check Firebase security rules allow write access
-3. Check network connection
-4. Try clearing form and re-entering data
-5. Check Firestore quota limits
-
-#### Issue: App Crashes on iOS
-**Solution:**
-1. Clear cache: `npm start --clear`
-2. Delete node_modules and reinstall: `rm -rf node_modules && npm install`
-3. Clear Xcode cache: `xcode-select --reset`
-4. Reinstall pods: `cd ios && pod install && cd ..`
-
-#### Issue: App Crashes on Android
-**Solution:**
-1. Clear cache: `npm start --clear`
-2. Clear Android build: `rm -rf android/.gradle`
-3. Delete node_modules: `rm -rf node_modules && npm install`
-4. Rebuild: `npm run android`
-
-#### Issue: TypeScript Errors
-**Solution:**
-1. Run: `npm run lint` to check ESLint rules
-2. Ensure tsconfig.json is properly configured
-3. Clear TypeScript cache
-4. Restart VS Code
-
-#### Issue: Slow Performance
-**Solution:**
-1. Check Firebase query optimization
-2. Reduce number of employees displayed at once
-3. Enable production mode: `expo start --no-dev --minify`
-4. Profile app with React DevTools
-
-### Getting Help
-
-1. Check [Expo Documentation](https://docs.expo.dev)
-2. Check [Firebase Documentation](https://firebase.google.com/docs)
-3. Check [React Native Documentation](https://reactnative.dev/docs/getting-started)
-4. Review project issues and discussions
 
 ---
-
-## 🤝 Contributing
-
-We welcome contributions to improve EmployeeManager!
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit changes (`git commit -m 'Add amazing feature'`)
-5. Push to branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
 
 ### Contribution Guidelines
 
@@ -792,28 +546,6 @@ We welcome contributions to improve EmployeeManager!
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🎓 Learning Resources
-
-- [Expo Documentation](https://docs.expo.dev/)
-- [React Native Guide](https://reactnative.dev/docs/getting-started)
-- [Firebase Setup](https://firebase.google.com/docs/setup/web)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [React Patterns](https://reactpatterns.com/)
-
----
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Review existing issues on GitHub
-3. Create a new issue with detailed description
-4. Provide steps to reproduce the problem
-5. Include error messages and logs
 
 ---
 
