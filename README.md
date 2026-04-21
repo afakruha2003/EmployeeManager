@@ -6,17 +6,16 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Screenshots](#screenshots)
-- [System Requirements](#system-requirements)
-- [Installation & Setup](#installation--setup)
-- [Usage Guide](#usage-guide)
-- [Project Structure](#project-structure)
-- [Firebase Configuration](#firebase-configuration)
-- [Available Scripts](#available-scripts)
-- [Contributing](#contributing)
-- [License](#license)
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Screenshots](#-screenshots)
+- [System Requirements](#-system-requirements)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Project Structure](#-project-structure)
+- [Firebase Configuration](#-firebase-configuration)
+- [Available Scripts](#-available-scripts)
+- [License](#-license)
 
 ---
 
