@@ -4,21 +4,6 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 ---
 
-##  Table of Contents
-
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Screenshots](#-screenshots)
-- [System Requirements](#-system-requirements)
-- [Installation & Setup](#-installation--setup)
-- [Usage Guide](#-usage-guide)
-- [Project Structure](#-project-structure)
-- [Firebase Configuration](#-firebase-configuration)
-- [Available Scripts](#-available-scripts)
-- [License](#-license)
-
----
-
 ##  Overview
 
 **EmployeeManager** is a comprehensive solution for managing employee records and information. Built using cutting-edge React Native technologies, this app provides a smooth user experience across multiple platforms. Whether you're running a small team or managing a larger workforce, EmployeeManager makes it easy to keep track of all your employees, their contact information, and professional status.
