@@ -1,10 +1,10 @@
-# EmployeeManager 👥
+# EmployeeManager 
 
 A modern, cross-platform employee management application built with **Expo**, **React Native**, and **Firebase**. Manage your team efficiently with an intuitive interface that works seamlessly on iOS, Android, and Web.
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
@@ -19,24 +19,24 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 **EmployeeManager** is a comprehensive solution for managing employee records and information. Built using cutting-edge React Native technologies, this app provides a smooth user experience across multiple platforms. Whether you're running a small team or managing a larger workforce, EmployeeManager makes it easy to keep track of all your employees, their contact information, and professional status.
 
 ### Key Highlights
 
-- ✅ **Real-time Synchronization** - All changes sync instantly with Firebase backend
-- ✅ **Full CRUD Operations** - Create, read, update, and delete employee records
-- ✅ **Smart Search & Filter** - Find employees by name or phone number with live filtering
-- ✅ **Status Management** - Track employee levels (Junior, Senior, Retired)
-- ✅ **Universal Platform Support** - Run on iOS, Android, and Web without code changes
-- ✅ **Modern Dark UI** - Beautiful dark theme with intuitive design
-- ✅ **Fast Performance** - Optimized loading and responsive interactions
-- ✅ **Error Handling** - Comprehensive error management with user feedback
+-  **Real-time Synchronization** - All changes sync instantly with Firebase backend
+-  **Full CRUD Operations** - Create, read, update, and delete employee records
+-  **Smart Search & Filter** - Find employees by name or phone number with live filtering
+-  **Status Management** - Track employee levels (Junior, Senior, Retired)
+-  **Universal Platform Support** - Run on iOS, Android, and Web without code changes
+-  **Modern Dark UI** - Beautiful dark theme with intuitive design
+-  **Fast Performance** - Optimized loading and responsive interactions
+-  **Error Handling** - Comprehensive error management with user feedback
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 ### 1. **Employee List View**
    - Display all employees in an organized list format
@@ -51,7 +51,7 @@ A modern, cross-platform employee management application built with **Expo**, **
    - Clear button for quick search reset
 
 ### 3. **Status-Based Filtering**
-   - Filter by employee status: Junior (🌱), Senior (⭐), or Retired (🏅)
+   - Filter by employee status: Junior , Senior, or Retired 
    - View all employees or filter by specific status
    - See count of employees in each status category
    - Color-coded visual indicators for each status
@@ -92,9 +92,9 @@ A modern, cross-platform employee management application built with **Expo**, **
    - Updated in real-time as employees are added/removed
 
 ### 9. **Status Badges**
-   - **Junior** (🌱) - Teal/Green color (#06D6A0)
-   - **Senior** (⭐) - Blue color (#3A86FF)
-   - **Retired** (🏅) - Gray color (#8D8FA8)
+   - **Junior** - Teal/Green color (#06D6A0)
+   - **Senior** - Blue color (#3A86FF)
+   - **Retired** - Gray color (#8D8FA8)
    - Size variations (small and regular)
 
 ### 10. **User Interface**
@@ -115,14 +115,12 @@ A modern, cross-platform employee management application built with **Expo**, **
    <img src="assets/screenshots/add.jpeg" alt="Add Employee" width="250" />
    <img src="assets/screenshots/edit.jpeg" alt="Edit Employee" width="250" />
    <img src="assets/screenshots/search.jpeg" alt="Search" width="250" />
-   <img src="assets/screenshots/home_filter.jpeg" alt="Filter" width="250" />
-   <img src="assets/screenshots/delete.jpeg" alt="Filter" width="250" />
   </div>
   
 </div>
 ---
 
-## 📱 System Requirements
+##  System Requirements
 
 ### Minimum Requirements
 - **Node.js** version 16 or higher
@@ -153,7 +151,7 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Prerequisites Installation
 
@@ -225,7 +223,7 @@ npm list firebase
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Starting the Development Server
 
@@ -265,82 +263,7 @@ npx expo start --web
 2. Run `npm start`
 3. Scan the QR code displayed in terminal
 
-### Application Architecture
-
-```
-EmployeeManager App
-├── Navigation Layer (Expo Router)
-│   ├── Home Screen (List & Search)
-│   ├── Add Screen (Create Form)
-│   ├── Edit Screen (Update Form)
-│   └── Modal Screens
-├── Component Layer
-│   ├── EmployeeCard (Display)
-│   ├── StatusBadge (Status UI)
-│   └── Themed Components
-├── Business Logic Layer
-│   ├── Firebase Service (firebase.ts)
-│   ├── CRUD Operations
-│   └── Data Validation
-└── Data Layer (Firebase Firestore)
-    └── employees Collection
-```
-
-### Data Flow
-
-```
-User Action
-    ↓
-React Component
-    ↓
-Firebase Service (lib/firebase.ts)
-    ↓
-Firestore Database
-    ↓
-Update UI with new data
-```
-
-### Component Hierarchy
-
-```
-App Root
-├── _layout.tsx (Layout wrapper)
-├── index.tsx (Home screen)
-│   ├── TextInput (Search)
-│   ├── TouchableOpacity (Filters)
-│   ├── FlatList (Employee list)
-│   └── EmployeeCard (Child components)
-│       ├── StatusBadge
-│       ├── Text (Employee info)
-│       └── TouchableOpacity (Actions)
-├── add.tsx (Add employee form)
-│   ├── TextInput (Name, Phone)
-│   ├── StatusCard (Status picker)
-│   └── TouchableOpacity (Save/Cancel)
-├── edit/[id].tsx (Edit employee form)
-│   ├── TextInput (Name, Phone)
-│   ├── StatusCard (Status picker)
-│   ├── TouchableOpacity (Update/Delete)
-│   └── ActivityIndicator (Loading)
-└── modal.tsx (Modal screens)
-```
-
-### State Management
-
-- **Local Component State** - React `useState` for form inputs and UI state
-- **Navigation State** - Expo Router for route management
-- **Data Persistence** - Firebase Firestore for backend state
-
-### Error Handling
-
-- Form validation before submission
-- Try-catch blocks for async operations
-- User-friendly alert dialogs for errors
-- Loading states to prevent duplicate submissions
-
----
-
-## 📁 Project Structure
+##  Project Structure
 
 ```
 EmployeeManager/
@@ -411,8 +334,7 @@ EmployeeManager/
 
 ---
 
-## 🔥 Firebase Configuration
-
+##  Firebase Configuration
 ### Firestore Database Structure
 
 **Collection: `employees`**
@@ -442,7 +364,7 @@ Each employee document contains:
 
 ---
 
-## 🔧 Available Scripts
+## Available Scripts
 
 ```bash
 # Start development server
@@ -464,60 +386,6 @@ npm run lint
 npm run reset-project
 ```
 
-
-### Hot Reload Development
-
-The app supports hot reload during development:
-
-```bash
-npm start
-
-# In the terminal, press:
-# 'r' - Reload app
-# 'a' - Open on Android Emulator
-# 'i' - Open on iOS Simulator
-# 'w' - Open in web browser
-# 'j' - Open debugger
-# 'q' - Quit
-```
-### Adding New Features
-
-1. **Create New Screen**
-   ```bash
-   # Add new file in app/ directory
-   # Use dynamic routes with [id].tsx syntax for parameterized routes
-   ```
-
-2. **Create New Component**
-   ```bash
-   # Add new file in components/ directory
-   # Import and use in screens
-   ```
-
-3. **Update Firebase Operations**
-   ```bash
-   # Add new functions in lib/firebase.ts
-   # Follow the existing CRUD pattern
-   ```
-
----
-
-### Pre-Deployment Checklist
-
-- [ ] Update `app.json` with correct app name and version
-- [ ] Update `package.json` version number
-- [ ] Replace Firebase config with production credentials
-- [ ] Update Firebase Firestore security rules
-- [ ] Test on multiple devices (iOS, Android, Web)
-- [ ] Run ESLint: `npm run lint`
-- [ ] Check app performance and loading times
-- [ ] Test offline functionality
-- [ ] Verify error handling and edge cases
-- [ ] Update README with any new features
-
-
----
-
 ### Contribution Guidelines
 
 - Follow existing code style and conventions
@@ -528,32 +396,12 @@ npm start
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🚀 Future Enhancements
-
-Planned features for future versions:
-
-- [ ] Employee photo upload
-- [ ] Department assignment
-- [ ] Role-based access control
-- [ ] Advanced reporting and analytics
-- [ ] Bulk import/export
-- [ ] Email notifications
-- [ ] Calendar integration
-- [ ] Performance reviews tracking
-- [ ] Attendance management
-- [ ] Push notifications
-- [ ] Offline sync capability
-- [ ] Dark/Light theme toggle
-
----
-
-**Created with ❤️ using Expo, React Native, and Firebase**
 
 Last Updated: April 2026
 Version: 1.0.0
