@@ -36,77 +36,7 @@ A modern, cross-platform employee management application built with **Expo**, **
 
 ---
 
-##  Key Features
-
-### 1. **Employee List View**
-   - Display all employees in an organized list format
-   - Real-time data fetching from Firebase
-   - Employee count statistics
-   - Loading indicators for smooth UX
-
-### 2. **Advanced Search**
-   - Search employees by **full name** (case-insensitive)
-   - Search by **phone number**
-   - Live search results as you type
-   - Clear button for quick search reset
-
-### 3. **Status-Based Filtering**
-   - Filter by employee status: Junior , Senior, or Retired 
-   - View all employees or filter by specific status
-   - See count of employees in each status category
-   - Color-coded visual indicators for each status
-
-### 4. **Employee Cards**
-   - Interactive cards displaying employee information
-   - Custom initials avatar with status-based color coding
-   - Phone number display
-   - Status badge
-   - Quick action buttons (Edit & Delete)
-   - Smooth shadows and modern styling
-
-### 5. **Add Employee**
-   - Intuitive form to create new employee records
-   - Required fields: Full Name, Phone Number, Status
-   - Real-time avatar preview based on initials
-   - Input validation with error messages
-   - Status selection with visual indicators
-   - Save and Cancel options
-
-### 6. **Edit Employee**
-   - Load and display existing employee information
-   - Update any employee field (Name, Phone, Status)
-   - Real-time preview of changes
-   - Confirmation on save
-   - Option to delete employee directly from edit screen
-
-### 7. **Delete Employee**
-   - Confirmation dialog to prevent accidental deletion
-   - Safe deletion with error handling
-   - Automatic list refresh after deletion
-   - Clear feedback messages
-
-### 8. **Employee Statistics**
-   - Total employee count displayed in header
-   - Count breakdown by status (Junior, Senior, Retired)
-   - Visual statistics pills with color coding
-   - Updated in real-time as employees are added/removed
-
-### 9. **Status Badges**
-   - **Junior** - Teal/Green color (#06D6A0)
-   - **Senior** - Blue color (#3A86FF)
-   - **Retired** - Gray color (#8D8FA8)
-   - Size variations (small and regular)
-
-### 10. **User Interface**
-   - Dark theme optimized for all lighting conditions
-   - Responsive layout adapting to various screen sizes
-   - Keyboard-aware forms (iOS/Android specific)
-   - Safe area handling for notched devices
-   - Consistent spacing and typography
-
----
-
-## 📸 Screenshots
+##  Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
   <div style="text-align: center;">
@@ -114,7 +44,6 @@ A modern, cross-platform employee management application built with **Expo**, **
    <img src="assets/screenshots/home.jpeg" alt="Home Screen" width="250" />
    <img src="assets/screenshots/add.jpeg" alt="Add Employee" width="250" />
    <img src="assets/screenshots/edit.jpeg" alt="Edit Employee" width="250" />
-   <img src="assets/screenshots/search.jpeg" alt="Search" width="250" />
   </div>
   
 </div>
@@ -352,38 +281,6 @@ Each employee document contains:
 ```
 
 
-### Firebase Functions Used
-
-| Function | Purpose | Parameters |
-|----------|---------|-----------|
-| `fetchEmployees()` | Get all employees from Firestore | None |
-| `fetchEmployee(id)` | Get single employee by ID | `id: string` |
-| `createEmployee(data)` | Create new employee document | `{name, phone, statusLabel}` |
-| `updateEmployee(id, data)` | Update employee information | `id: string, {name, phone, statusLabel}` |
-| `deleteEmployee(id)` | Delete employee from database | `id: string` |
-
----
-
-## Available Scripts
-
-```bash
-# Start development server
-npm start
-
-# Start on iOS
-npm run ios
-
-# Start on Android
-npm run android
-
-# Start on Web
-npm run web
-
-# Run ESLint
-npm run lint
-
-# Reset project to fresh state
-npm run reset-project
 ```
 
 ### Contribution Guidelines
